@@ -7,7 +7,7 @@
     state: present
 - name: Install Nginx (yum)
   become: true
-   yum:
+  yum:
      name: nginx
      state: present
   notify: Start nginx service
